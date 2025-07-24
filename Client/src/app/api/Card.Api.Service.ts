@@ -22,7 +22,7 @@ export class CardService {
     );
   }
 
- 
+ //tnytn
   getCardsByCustomerId(customerId: number): Observable<Card[]> {
     const params = new HttpParams().set('customerId', customerId.toString());
     return this.http.get<Card[]>(`${this.baseUrl}/card/getCardsByCustomerId`, { params }).pipe(
